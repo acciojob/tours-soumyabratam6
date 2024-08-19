@@ -15,7 +15,7 @@ function Tour({ id, name, info, image, price, removeTour }) {
         <p id={`tour-item-para-${id}`}>
           {showMore  ? info : `${info.substring(0, 200)}...`}
           <button className='show' id={`see-more-${id}`} onClick={toggleShowMore}>
-            {showMore  ? 'See less' : 'See more'}
+            {showMore  ? 'Show less' : 'See more'}
           </button>
         </p>
         <button className="delete-btn" id={`delete-btn-${id}`} onClick={() => removeTour(id)}>
