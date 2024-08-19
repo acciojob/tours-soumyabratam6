@@ -7,14 +7,23 @@
     margin: 20px;
     border-radius: 10px;
     width: 600px;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
 }
+
 .tour-image{
-    width: 500px;
+    width: 200px; /* reduce width */
     border-radius: 10px;
     height:auto;
 }
+
+.tour-info{
+    width: 300px; /* add width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .show{
     margin-left: 10px; 
     cursor: pointer; 
@@ -22,8 +31,9 @@
     background-color: transparent;
     color: blue; 
 }
+
 .delete-btn{
-    width:100px;
+    width:60px; /* reduce width */
     height: 40px;
     border: none;
     background-color:blue;

@@ -53,7 +53,7 @@ const App = () => {
     return <Loading />;
   }
   return (
-    <div className="App">
+    <div className="App" id="main">
     <Tours tours={tours} />
   </div>
   );

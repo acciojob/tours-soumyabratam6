@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import Tour from './Tour';
+import'../styles/Tours.css'
 const Tours = ({  tours: initialTours  })=>{
 const [tours, setTours] = useState(initialTours);
 
@@ -11,8 +12,9 @@ const [tours, setTours] = useState(initialTours);
     setTours(initialTours);
   };
   return (
-    <div>
+    <div >
       <h1>Our Tours</h1>
+      <div className="tours-container">
       {tours.length > 0 ? (
         tours.map((tour) => (
           <Tour
@@ -33,6 +35,7 @@ const [tours, setTours] = useState(initialTours);
           </button>
         </div>
       )}
+      </div>
     </div>
   );
 }

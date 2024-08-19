@@ -7,22 +7,22 @@ function Tour({ id, name, info, image, price, removeTour }) {
     setShowMore(!showMore);
   };
   return (
-    <article className="tour" >
+    <div className="tour" >
       <img  className="tour-image" src={image} alt={name} />
       <div className="tour-info">
         <h4>{name}</h4>
         <h4 className="tour-price">${price}</h4>
-        <p>
+        <p id={`tour-item-para-${id}`}>
           {showMore  ? info : `${info.substring(0, 200)}...`}
           <button className='show' onClick={toggleShowMore}>
             {showMore  ? 'See less' : 'Show more'}
           </button>
         </p>
-        <button className="delete-btn" onClick={() => removeTour(id)}>
+        <button className="delete-btn" id={`delete-btn-${id}`} onClick={() => removeTour(id)}>
           Remove Tour
         </button>
       </div>
-    </article>
+    </div>
   );
 }
 
