@@ -1,0 +1,32 @@
+.tour{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 600px;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.tour-image{
+    width: 500px;
+    border-radius: 10px;
+    height:auto;
+}
+.show{
+    margin-left: 10px; 
+    cursor: pointer; 
+    border: none;
+    background-color: transparent;
+    color: blue; 
+}
+.delete-btn{
+    width:100px;
+    height: 40px;
+    border: none;
+    background-color:blue;
+    color: antiquewhite;
+    border-radius: 10px;
+}
